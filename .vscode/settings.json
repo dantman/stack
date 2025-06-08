@@ -1,0 +1,40 @@
+{
+	"workbench.colorCustomizations": {
+		// Bars: dark purple/slate blue
+		"titleBar.activeBackground": "#3E3566",
+		"titleBar.activeForeground": "#FFFFFF",
+		"titleBar.inactiveBackground": "#2C2A3A",
+		"titleBar.inactiveForeground": "#CCCCCC",
+		"activityBar.background": "#353A5F",
+		"activityBar.foreground": "#FFFFFF",
+		// Activity bar badge: golden
+		"activityBarBadge.background": "#FFD700",
+		"activityBarBadge.foreground": "#23243A",
+		// Background: subtly colored dark
+		"editor.background": "#1B1C2C",
+		"editor.foreground": "#FFFFFF",
+		"sideBar.background": "#1B1C2C",
+		"sideBar.foreground": "#FFFFFF",
+		"panel.background": "#1B1C2C",
+		"menu.background": "#1B1C2C",
+		"menu.foreground": "#FFFFFF",
+		// Inlay hints
+		"editorInlayHint.background": "#353A5F",
+		"editorInlayHint.foreground": "#FFD700",
+		// Tab bar
+		"tab.activeBackground": "#353A5F",
+		"tab.inactiveBackground": "#23243A",
+		"tab.hoverBackground": "#3E3566",
+		"tab.border": "#353A5F",
+		"tab.activeBorder": "#FFD700",
+		"tab.activeForeground": "#FFFFFF",
+		"tab.inactiveForeground": "#CCCCCC",
+		"editorGroupHeader.tabsBackground": "#1B1C2C",
+		// Status bar
+		"statusBar.background": "#353A5F",
+		"statusBar.foreground": "#FFFFFF",
+		// Section headers
+		"sideBarSectionHeader.background": "#353A5F",
+		"sideBarSectionHeader.foreground": "#FFFFFF"
+	}
+}
