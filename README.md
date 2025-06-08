@@ -108,39 +108,43 @@ Many of these prompt files are actually **crafted by AI**—created through inte
 ## Repository Structure
 
 ```
-📁 nextjs/            # Next.js setup guides, prompts, and configurations
-├── prompts/          # AI prompts for project initialization
-├── configurations/   # Detailed setup and customization guides
-├── snippets/         # Reusable components and utilities
-└── examples/         # Implementation patterns and best practices
-
-📁 astro/             # Astro project resources
-├── prompts/          # Static site and content-focused prompts
-├── configurations/   # Build and deployment configurations
-└── examples/         # Static site patterns and optimizations
-
-📁 mobile/            # Cross-platform mobile development
-├── pwa/              # Progressive Web App setup and configs
-├── capacitor/        # Capacitor native app configurations
-├── expo/             # React Native with Expo setup guides
-└── examples/         # Mobile-first design patterns
-
-📁 database/          # Database and ORM configurations
-├── postgresql/       # PostgreSQL setup and best practices
-├── prisma/           # Prisma schema patterns and migrations
-├── drizzle/          # Drizzle ORM configurations
-└── convex/           # Convex.dev experimental setups
-
-📁 deployment/        # Infrastructure and hosting
-├── vercel/           # Vercel deployment configurations
-├── kubernetes/       # K8s manifests and deployment guides
-└── docker/           # Containerization patterns
-
-📁 tooling/           # Development workflow and tools
-├── vscode/           # VS Code configurations and extensions
-├── linting/          # ESLint, Prettier, and code quality tools
-└── testing/          # Testing setup and patterns
+📁 tooling/                    ## Development workflow and tools
+├── WorkspaceSetup.prompt.md   # Complete workspace setup prompt for AI assistants
+├── package-scripts.md         # Standard package.json scripts configuration
+├── dependabot.md              # GitHub Dependabot automated dependency updates
+├── prettier/                  # Code formatting setup
+│   └── setup.md               # Prettier configuration and EditorConfig
+├── vscode/                    # VS Code workspace configurations
+│   ├── settings.md            # Core VS Code settings for TypeScript development
+│   ├── mcp-servers.md         # Model Context Protocol server configurations
+│   └── tasks.md               # Task runner configurations for common workflows
+└── linting/                   # Code quality and linting tools (coming soon)
 ```
+
+> **Current Focus**: This repository currently contains comprehensive tooling configurations as the foundational layer. Framework-specific configurations (Next.js, Astro, mobile, database, deployment) will be added as the repository grows.
+
+## Current Repository Contents
+
+### 🛠️ Tooling & Workspace Setup
+
+The repository currently provides comprehensive development workflow configurations:
+
+- **[Workspace Setup Prompt](tooling/WorkspaceSetup.prompt.md)**: A complete AI prompt for setting up new TypeScript projects with all preferred configurations
+- **[Package Scripts](tooling/package-scripts.md)**: Standard `package.json` scripts for TypeScript development workflows
+- **[Prettier Setup](tooling/prettier/setup.md)**: Code formatting configuration with EditorConfig integration
+- **[VS Code Settings](tooling/vscode/settings.md)**: Core editor settings for TypeScript development
+- **[MCP Server Configuration](tooling/vscode/mcp-servers.md)**: Model Context Protocol servers for enhanced AI capabilities
+- **[VS Code Tasks](tooling/vscode/tasks.md)**: Task runner configurations for common development workflows
+- **[Dependabot Configuration](tooling/dependabot.md)**: Automated dependency update setup
+
+### 🔮 Coming Soon
+
+Framework-specific configurations will be added in future updates:
+- Next.js project templates and configurations
+- Astro static site generation setups
+- Mobile development (PWA, Capacitor, React Native) configurations
+- Database and ORM setup guides
+- Deployment and infrastructure patterns
 
 ## How to Use This Repository
 
@@ -148,26 +152,27 @@ Many of these prompt files are actually **crafted by AI**—created through inte
 
 This repository is designed to provide context for AI-assisted development. When starting a new project:
 
-1. Reference the appropriate prompt files in the `prompts/` directory
-2. Use the configuration guides in `configurations/` for detailed setup instructions
-3. Leverage code snippets from `snippets/` for common patterns
-4. Refer to `examples/` for implementation guidance
+1. **Use the Complete Setup Prompt**: Copy the [workspace setup prompt](tooling/WorkspaceSetup.prompt.md) and paste it into your AI assistant for automatic project configuration
+2. **Reference Specific Configurations**: Link to individual configuration files when you need specific setup instructions
+3. **Adapt to Your Needs**: The configurations serve as starting points that can be customized for specific project requirements
 
 ### For Developers
 
-- Browse the configurations to understand modern TypeScript development patterns
-- Use the prompts as templates for your own project setup
-- Explore the examples for inspiration on architecture and design patterns
-- Contribute improvements or additional stack configurations
+Each configuration file includes:
+- **Setup instructions**: Step-by-step installation and configuration
+- **Configuration examples**: Copy-pasteable code snippets
+- **Best practices**: Explanations of why certain choices were made
+- **Customization notes**: How to adapt configurations for different use cases
 
-## Getting Started
+### Quick Start
 
-To get started with any stack configuration in this repository:
+For a new TypeScript project, the fastest way to get started is to use the [workspace setup prompt](tooling/WorkspaceSetup.prompt.md) with an AI assistant. This will configure:
 
-1. Choose the appropriate prompt file for your project type
-2. Follow the configuration guide for detailed setup instructions
-3. Customize the setup based on your specific requirements
-4. Use the provided snippets and examples as building blocks
+- Package.json scripts for TypeScript and formatting
+- Prettier with EditorConfig
+- VS Code workspace settings and tasks
+- MCP server integration for enhanced AI capabilities
+- Optional Dependabot for automated dependency updates
 
 ## Contributing
 
@@ -183,8 +188,11 @@ Feel free to reach out if you have questions about any of the configurations or 
 
 ## Current Status
 
-🚧 **Repository is actively being populated** - Currently adding initial prompt files and configuration guides.
-🕑 *Last updated: June 2025*
+✅ **Initial tooling configurations complete** - Comprehensive workspace setup and development workflow configurations now available.
+
+🚧 **Framework-specific configurations coming next** - Next.js, Astro, mobile, and database configurations planned for future updates.
+
+*Last updated: June 2025*
 
 <!-- Badge References -->
 [nextjs-badge]: https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white
