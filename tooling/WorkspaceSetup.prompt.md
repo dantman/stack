@@ -1,5 +1,16 @@
-# Workspace Setup Prompt
+# Workspace ## Download to Your Prompts Folder
 
+To save this prompt to your local prompts folder for easy access:
+
+```powershell
+# Create prompts directory if it doesn't exist
+New-Item -ItemType Directory -Force -Path "$env:APPDATA\Code\User\prompts"
+
+# Download the prompt file
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dantman/stack/main/tooling/WorkspaceSetup.prompt.md" -OutFile "$env:APPDATA\Code\User\prompts\WorkspaceSetup.prompt.md"
+```
+
+After downloading, you can reference the prompt locally or copy its contents when setting up new workspaces.
 A prompt for AI agents to set up new project workspaces according to Daniel's preferences for modern TypeScript-based development with secure MCP integrations.
 
 ## Usage
@@ -9,6 +20,20 @@ Run `/WorkspaceSetup` prompt in your AI assistant to initiate the workspace setu
 You may provide additional context or specific requirements for the project, such as the framework being used (Next.js, Vite, etc.) or any specific tools that need to be integrated.
 
 For instance, `/WorkspaceSetup setup Drizzle in this Next.js project` will configure the workspace with Drizzle ORM and Next.js settings as per Daniel's consolidated configurations.
+
+## Download to Your Prompts Folder
+
+To save this prompt to your local prompts folder for easy access:
+
+```powershell
+# Create prompts directory if it doesn't exist
+New-Item -ItemType Directory -Force -Path "C:\Users\danie\AppData\Roaming\Code\User\prompts"
+
+# Download the prompt file
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dantman/stack/main/tooling/WorkspaceSetup.prompt.md" -OutFile "C:\Users\danie\AppData\Roaming\Code\User\prompts\WorkspaceSetup.prompt.md"
+```
+
+After downloading, you can reference the prompt locally or copy its contents when setting up new workspaces.
 
 # Instructions
 
