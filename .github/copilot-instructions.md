@@ -78,18 +78,7 @@ Daniel's current focus areas (update as needed):
 
 ## Automation & Index Update Guidelines
 
-- When asked to update the index or trigger repository automation:
-  - **Never run scripts or git commands directly.**
-  - **Never use the `gh` CLI.**
-  - **Always use the GitHub MCP server for all automation.**
-  - If the GitHub MCP server is unavailable or returns an error:
-    - **Do not attempt any git or CLI operations.**
-    - **Display the contents of `scripts/github-token-required.md` and instruct the user to set up authentication and restart VS Code.**
-  - Do not attempt to check MCP server availability by running any git commands or setting the working directory—only by attempting an MCP operation
-
-## Critical Automation Rule
-
-- **Never run any git commands (including commit, add, wrapup, status, or any other git operation) for automation or index updates.**
-- **Never attempt to stage, commit, or push changes directly.**
-- **All automation must use the GitHub MCP server.**
-- **If the GitHub MCP server is unavailable, only display the contents of `scripts/github-token-required.md` and instruct the user to set up authentication and restart VS Code. Do not attempt any git, CLI, or local repository operations.**
+- **Always use the GitHub MCP server for all automation.**
+- If the GitHub MCP server is unavailable or returns an error:
+- **Do not attempt any git or CLI operations.**
+- **Display the contents of [`scripts/github-token-required.md`](./scripts/github-token-required.md) and instruct the user to set up authentication and restart VS Code.**
