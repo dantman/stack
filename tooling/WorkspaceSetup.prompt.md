@@ -28,9 +28,9 @@ After downloading, you can reference the prompt locally as `/WorkspaceSetup` in 
 
 You are setting up a new project workspace. Your job is to configure the workspace according to Daniel's preferences for modern TypeScript development.
 
-1. **First, look up the INDEX**: Read the `INDEX.md` file in Daniel's stack repository to understand the consolidated configuration structure.
+1. **First, look up the INDEX**: Read the `INDEX.md` file at https://raw.githubusercontent.com/dantman/stack/main/INDEX.md to understand the consolidated configuration structure.
 
-2. **Use consolidated configurations**: Reference consolidated files for detailed setup instructions.
+2. **Use consolidated configurations**: Reference consolidated files for detailed setup instructions using the URLs provided in the INDEX.
 
 3. **Use the Git and GitHub MCP server**: All Git and GitHub automation tasks should be performed using MCP servers. Do NOT execute `git` or `gh` commands directly. Instead, use the MCP server's API for repository operations.
   
