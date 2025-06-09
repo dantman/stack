@@ -1,16 +1,5 @@
-# Workspace ## Download to Your Prompts Folder
+# Workspace
 
-To save this prompt to your local prompts folder for easy access:
-
-```powershell
-# Create prompts directory if it doesn't exist
-New-Item -ItemType Directory -Force -Path "$env:APPDATA\Code\User\prompts"
-
-# Download the prompt file
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dantman/stack/main/tooling/WorkspaceSetup.prompt.md" -OutFile "$env:APPDATA\Code\User\prompts\WorkspaceSetup.prompt.md"
-```
-
-After downloading, you can reference the prompt locally or copy its contents when setting up new workspaces.
 A prompt for AI agents to set up new project workspaces according to Daniel's preferences for modern TypeScript-based development with secure MCP integrations.
 
 ## Usage
@@ -33,7 +22,7 @@ New-Item -ItemType Directory -Force -Path "C:\Users\danie\AppData\Roaming\Code\U
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dantman/stack/main/tooling/WorkspaceSetup.prompt.md" -OutFile "C:\Users\danie\AppData\Roaming\Code\User\prompts\WorkspaceSetup.prompt.md"
 ```
 
-After downloading, you can reference the prompt locally or copy its contents when setting up new workspaces.
+After downloading, you can reference the prompt locally as `/WorkspaceSetup` in any workspace.
 
 # Instructions
 
