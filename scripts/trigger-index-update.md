@@ -61,7 +61,7 @@ The `.vscode/mcp.json` is configured with:
 ### Prerequisites
 
 - Docker installed and running
-- GitHub Personal Access Token with `repo` and `actions:write` scopes
+- Fine-grained GitHub Token with required permissions (see setup guide below)
 - VS Code with MCP extension enabled
 - Restart VS Code after configuration changes
 
@@ -124,63 +124,17 @@ export GITHUB_OWNER="your_username_or_org"
 export GITHUB_REPO="stack"
 ```
 
-# GitHub Personal Access Token Setup Guide
+This repository requires a **fine-grained personal access token** that is scoped only to this repository. This ensures AI agents have exactly the permissions they need, and nothing more.
 
-## Quick Setup with GitHub CLI (Recommended)
+## Creating Your Token
 
-The fastest way to set up authentication is using the GitHub CLI, which can handle token creation and scoping automatically:
+1. **Go to GitHub Settings**
+   
+   Navigate to `Settings` → `Developer settings` → `Personal access tokens` → `Fine-grained tokens`
 
-### Option 1: Interactive Setup
-```bash
-# Interactive login with additional scopes for AI agent workflows
-gh auth login --scopes "repo,actions:write,pull_requests:write,issues:write"
-```
-
-This will:
-- Open a browser for OAuth flow
-- Automatically create a token with specified scopes
-- Securely store the token in your system credential store
-- Configure git integration
-
-### Option 2: Use Existing Token
-If you already have a token:
-```bash
-# Use existing token from file
-gh auth login --with-token < token.txt
-
-# Or set environment variable
-export GH_TOKEN="your_existing_token"
-gh auth login
-```
-
-### Verify Authentication
-```bash
-# Check auth status and token permissions
-gh auth status
-
-# Test access to your repository
-gh repo view daniel/stack
-```
-
-## Fine-Grained Repository Token (Advanced)
-
-For maximum security and precise control, create a **fine-grained personal access token** scoped only to this repository:
-
-### Required Permissions for AI Agent Workflows
-
-| Permission | Access Level | Purpose |
-|------------|-------------|---------|
-| **Repository access** | Selected repositories | `daniel/stack` |
-| **Contents** | Write | Read/write files, create branches |
-| **Metadata** | Read | Access repository info |
-| **Actions** | Write | Trigger workflows, view runs |
-| **Pull requests** | Write | Create, update, merge PRs |
-| **Issues** | Write | Create issues, link to PRs |
-| **Commit statuses** | Read | Monitor CI/CD status |
-
-### Creation Steps
-
-1. **Go to GitHub Settings** → **Developer settings** → **Personal access tokens** → **Fine-grained tokens**
+2. **Create New Token**
+   
+   Click "Generate new token"
 
 2. **Click "Generate new token"**
 
@@ -203,20 +157,14 @@ For maximum security and precise control, create a **fine-grained personal acces
 
 5. **Generate and copy token**
 
-### Usage with GitHub CLI
-```bash
-# Set the fine-grained token as environment variable
-export GH_TOKEN="github_pat_11A..."
+5. **Generate and Save**
 
-# Verify it works
-gh auth status
-gh repo view daniel/stack
-```
+   Copy your token immediately - you won't see it again! You'll use this token with VS Code's secure input system.
 
 ## Token Management Best Practices
 
 ### Security
-- **Use fine-grained tokens** when possible (repository-scoped)
+- **Use fine-grained tokens** (repository-scoped)
 - **Set reasonable expiration** (30-90 days)
 - **Rotate regularly** and update MCP configuration
 - **Store securely** using VS Code's input system (never in files)
@@ -243,19 +191,12 @@ Create a setup script for easy token management:
 
 echo "Setting up GitHub authentication for AI agent workflows..."
 
-# Login with required scopes
-gh auth login --scopes "repo,actions:write,pull_requests:write,issues:write" --web
+# Set up the fine-grained token
+export GH_TOKEN="your_fine_grained_token"
 
-# Verify authentication
-echo "Verifying authentication..."
+# Verify the token permissions
 gh auth status
-
-# Test repository access
-echo "Testing repository access..."
 gh repo view daniel/stack
-
-# Test workflow access
-echo "Testing workflow access..."
 gh workflow list --repo daniel/stack
 
 echo "✅ Setup complete! You can now use AI agents to:"

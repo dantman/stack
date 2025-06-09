@@ -2,7 +2,7 @@
 
 This guide helps you create and configure GitHub Fine-Grained Personal Access Tokens optimized for AI agent workflows, including automated PR creation, workflow triggering, and CI/CD monitoring.
 
-Fine-grained tokens provide repository-specific permissions with the principle of least privilege, making them ideal for secure AI agent automation.
+Fine-grained tokens provide repository-specific permissions with the principle of least privilege, making them ideal for secure AI agent automation. We exclusively use fine-grained tokens as they offer superior security through granular permissions and repository-specific access control.
 
 ## Fine-Grained Repository Token Setup
 

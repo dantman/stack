@@ -1,10 +1,15 @@
 #!/bin/bash
-# Fine-Grained GitHub Token Setup for AI Agent Workflows
-# This script guides you through creating a fine-grained token for maximum security
+# This script assists with setting up fine-grained tokens for GitHub repository access
+# Required for AI agent workflows and automation
+# We exclusively use fine-grained tokens for enhanced security and granular control
 
 set -e  # Exit on any error
 
-echo "🚀 Setting up fine-grained GitHub token for AI agent workflows..."
+echo "🔐 GitHub Fine-Grained Token Setup Assistant"
+echo "----------------------------------------"
+echo "This script will guide you through creating a secure,"
+echo "repository-specific fine-grained token for AI agent workflows."
+echo "We exclusively use fine-grained tokens for enhanced security."
 echo ""
 
 # Check if gh is installed
@@ -179,11 +184,11 @@ echo "      'Create a PR for the recent changes'"
 echo "   3. Review the token setup guide: scripts/github-token-setup.md"
 echo ""
 echo "🔐 Security notes:"
-echo "   • Your token is stored securely by GitHub CLI"
+echo "   • Token is only valid for daniel/stack repository"
 echo "   • VS Code will prompt for the token securely (never stored in files)"
-echo "   • Consider setting up fine-grained tokens for production use"
+echo "   • Set up token rotation using expiration settings"
 echo ""
 echo "🆘 Troubleshooting:"
 echo "   • Run 'gh auth status' to check authentication"
-echo "   • Run 'gh auth refresh' if token expires"
+echo "   • Create a new token once current one expires"
 echo "   • See scripts/github-token-setup.md for detailed guidance"
