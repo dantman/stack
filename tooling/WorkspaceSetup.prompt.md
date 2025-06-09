@@ -16,10 +16,10 @@ To save this prompt to your local prompts folder for easy access:
 
 ```powershell
 # Create prompts directory if it doesn't exist
-New-Item -ItemType Directory -Force -Path "C:\Users\danie\AppData\Roaming\Code\User\prompts"
+New-Item -ItemType Directory -Force -Path "$env:APPDATA\Code\User\prompts"
 
 # Download the prompt file
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dantman/stack/main/tooling/WorkspaceSetup.prompt.md" -OutFile "C:\Users\danie\AppData\Roaming\Code\User\prompts\WorkspaceSetup.prompt.md"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dantman/stack/main/tooling/WorkspaceSetup.prompt.md" -OutFile "$env:APPDATA\Code\User\prompts\WorkspaceSetup.prompt.md"
 ```
 
 After downloading, you can reference the prompt locally as `/WorkspaceSetup` in any workspace.
