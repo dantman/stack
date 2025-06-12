@@ -9,6 +9,7 @@
     "EditorConfig.EditorConfig",
     "dbaeumer.vscode-eslint",
     "bradlc.vscode-tailwindcss",
-    "herrmannplatz.npm-dependency-links"
+    "herrmannplatz.npm-dependency-links",
+    "streetsidesoftware.code-spell-checker"
   ]
 }

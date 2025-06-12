@@ -18,6 +18,7 @@ This document lists recommended VS Code extensions for Daniel's TypeScript-based
 - [npm-import-package-version](https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-npm-import-package-version) — Displays the installed version of npm packages inline in your import statements, reducing context switching.
 - [npm Dependency Links](https://marketplace.visualstudio.com/items?itemName=herrmannplatz.npm-dependency-links) — Adds clickable links to npm package pages directly from your package.json dependencies for quick reference.
 - [NPM Scripts](https://marketplace.visualstudio.com/items?itemName=fknop.vscode-npm) — Adds NPM scripts explorer and task integration, making it easier to run and manage project scripts directly from VS Code.
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) — Provides in-editor spell checking for source code, comments, and documentation, helping catch typos and improve code quality.
 
 ---
 
