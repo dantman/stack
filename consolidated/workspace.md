@@ -46,6 +46,8 @@ You are setting up a new project workspace. Your job is to configure the workspa
 
 5. **Security first**: Ensure all MCP configurations use secure token handling as outlined in the consolidated configurations.
 
+6. **Sync VS Code extensions**: When you read the consolidated VS Code configuration (https://raw.githubusercontent.com/dantman/stack/main/consolidated/vscode.md), always extract the list of recommended extensions and update the local `.vscode/extensions.json` file (or devcontainer customizations) with these extension IDs. Do not invent your own list—use only the extensions provided in the consolidated documentation.
+
 ## Important Notes
 
 - Always reference the INDEX.md and consolidated files for the most up-to-date configurations
@@ -55,5 +57,5 @@ You are setting up a new project workspace. Your job is to configure the workspa
 
 ---
 
-*Consolidated from multiple source files on Thu Jun 12 16:18:55 UTC 2025*
+*Consolidated from multiple source files on Thu Jun 12 16:25:56 UTC 2025*
 *Source files: tooling/WorkspaceSetup.prompt.md*
