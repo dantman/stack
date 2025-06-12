@@ -15,6 +15,9 @@ on:
   workflow_dispatch:
     # Allow manual triggering
 
+permissions:
+  contents: write
+
 jobs:
   update-index:
     runs-on: ubuntu-latest
