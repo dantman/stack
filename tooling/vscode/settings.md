@@ -33,10 +33,7 @@ Create or update `.vscode/settings.json` in your project root:
 
 ## Required Extensions
 
-Make sure you have the following VS Code extensions installed:
-
-- **Prettier - Code formatter** (`esbenp.prettier-vscode`)
-- **TypeScript and JavaScript Language Features** (built-in)
+> **Extension recommendations are documented in a separate section.**
 
 ## Additional Considerations
 
