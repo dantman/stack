@@ -5,6 +5,9 @@
 
 REPO_BASE="https://raw.githubusercontent.com/dantman/stack/main"
 
+# Always run from the repository root
+cd "$(dirname "$0")/.."
+
 echo "🔄 Generating consolidated configuration files..."
 
 # Create consolidated directory
