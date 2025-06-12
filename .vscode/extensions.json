@@ -12,6 +12,7 @@
     "herrmannplatz.npm-dependency-links",
     "streetsidesoftware.code-spell-checker",
     "github.vscode-pull-request-github",
-    "atlassian.atlascode"
+    "atlassian.atlascode",
+    "mechatroner.rainbow-csv"
   ]
 }
