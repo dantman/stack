@@ -22,4 +22,15 @@ This document lists recommended VS Code extensions for Daniel's TypeScript-based
 
 ---
 
+## Optional Extensions
+
+These extensions are recommended for specific workflows or environments:
+
+- [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=github.vscode-pull-request-github) — Recommended if your repository is hosted on GitHub. Enables pull request management, code reviews, and issue tracking directly within VS Code.
+- [Atlassian: Jira & Bitbucket](https://marketplace.visualstudio.com/items?itemName=atlassian.atlascode) — Recommended if your project uses Jira for issue tracking or Bitbucket for source control. Integrates Jira issues and Bitbucket pull requests into your workflow.
+
+*Only add these to your recommended extensions if your project uses the corresponding services.*
+
+---
+
 *To update the recommended extensions, edit this file and update `.vscode/extensions.json` accordingly.*
