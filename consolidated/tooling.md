@@ -387,5 +387,5 @@ npm run format
 
 ---
 
-*Consolidated from multiple source files on Thu Jun 12 16:51:17 UTC 2025*
+*Consolidated from multiple source files on Thu Jun 12 10:38:40 PDT 2025*
 *Source files: tooling/prettier/setup.md tooling/dependabot.md tooling/package-scripts.md*

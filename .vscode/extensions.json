@@ -13,6 +13,9 @@
     "streetsidesoftware.code-spell-checker",
     "github.vscode-pull-request-github",
     "atlassian.atlascode",
-    "mechatroner.rainbow-csv"
+    "mechatroner.rainbow-csv",
+    "brunnerh.insert-unicode",
+    "antfu.file-nesting",
+    "codeandstuff.package-json-upgrade"
   ]
 }

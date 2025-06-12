@@ -417,6 +417,9 @@ This document lists recommended VS Code extensions for Daniel's TypeScript-based
 - [NPM Scripts](https://marketplace.visualstudio.com/items?itemName=fknop.vscode-npm) — Adds NPM scripts explorer and task integration, making it easier to run and manage project scripts directly from VS Code.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) — Provides in-editor spell checking for source code, comments, and documentation, helping catch typos and improve code quality.
 - [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv) — Highlights CSV and TSV files, and allows running SQL-like queries on tabular data, making it easier to inspect and manipulate data files in your projects.
+- [Insert Unicode](https://marketplace.visualstudio.com/items?itemName=brunnerh.insert-unicode) — Lets you search for and insert Unicode characters directly into your documents, useful for symbols and special characters.
+- [File Nesting Updater](https://marketplace.visualstudio.com/items?itemName=antfu.file-nesting) — Automatically updates Anthony Fu's file nesting config for improved file organization in the VS Code explorer.
+- [Package Json Upgrade](https://marketplace.visualstudio.com/items?itemName=codeandstuff.package-json-upgrade) — Shows available updates in package.json files, offers quick fixes to update dependencies, and displays changelogs for easy package maintenance.
 
 ---
 
@@ -426,8 +429,9 @@ These extensions are recommended for specific workflows or environments:
 
 - [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=github.vscode-pull-request-github) — Recommended if your repository is hosted on GitHub. Enables pull request management, code reviews, and issue tracking directly within VS Code.
 - [Atlassian: Jira & Bitbucket](https://marketplace.visualstudio.com/items?itemName=atlassian.atlascode) — Recommended if your project uses Jira for issue tracking or Bitbucket for source control. Integrates Jira issues and Bitbucket pull requests into your workflow.
+- [Astro](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode) — Recommended for Astro projects. Provides language support, syntax highlighting, and tooling for Astro static site development.
 
-*Only add these to your recommended extensions if your project uses the corresponding services.*
+*Only add these to your recommended extensions if your project uses the corresponding services or frameworks.*
 
 ---
 
@@ -435,5 +439,5 @@ These extensions are recommended for specific workflows or environments:
 
 ---
 
-*Consolidated from multiple source files on Thu Jun 12 16:51:17 UTC 2025*
+*Consolidated from multiple source files on Thu Jun 12 10:38:40 PDT 2025*
 *Source files: tooling/vscode/settings.md tooling/vscode/tasks.md tooling/vscode/mcp-servers.md tooling/vscode/extensions.md*
