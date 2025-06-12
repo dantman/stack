@@ -3,7 +3,7 @@
 # Consolidation script - merges related configurations into consumption-ready files
 # Usage: ./generate-consolidated.sh
 
-REPO_BASE="https://raw.githubusercontent.com/dantman/stack/main"
+REPO_BASE="https://raw.githubusercontent.com/dantman/stack/refs/heads/main"
 
 # Always run from the repository root
 cd "$(dirname "$0")/.."
@@ -93,7 +93,7 @@ cat > INDEX.md << EOF
 These consolidated files group related configurations for single-fetch efficiency:
 
 - **tooling**: [\`consolidated/tooling.md\`]($REPO_BASE/consolidated/tooling.md) - Prettier, Dependabot, Package Scripts
-- **vscode**: [\`consolidated/vscode.md\`]($REPO_BASE/consolidated/vscode.md) - Settings, Tasks, MCP Servers  
+- **vscode**: [\`consolidated/vscode.md\`]($REPO_BASE/consolidated/vscode.md) - Settings, Tasks, MCP Servers
 - **workspace**: [\`consolidated/workspace.md\`]($REPO_BASE/consolidated/workspace.md) - Workspace Setup Prompts
 
 ## 📁 Individual Files (For Reference)
