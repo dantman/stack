@@ -117,7 +117,8 @@ Many of these prompt files are actually **crafted by AI**—created through inte
 ├── vscode/                    # VS Code workspace configurations
 │   ├── settings.md            # Core VS Code settings for TypeScript development
 │   ├── mcp-servers.md         # Model Context Protocol server configurations
-│   └── tasks.md               # Task runner configurations for common workflows
+│   ├── tasks.md               # Task runner configurations for common workflows
+│   └── extensions.md          # Recommended VS Code extensions
 └── linting/                   # Code quality and linting tools (coming soon)
 ```
 
@@ -136,6 +137,7 @@ The repository currently provides comprehensive development workflow configurati
 - **[MCP Server Configuration](tooling/vscode/mcp-servers.md)**: Model Context Protocol servers for enhanced AI capabilities
 - **[VS Code Tasks](tooling/vscode/tasks.md)**: Task runner configurations for common development workflows
 - **[Dependabot Configuration](tooling/dependabot.md)**: Automated dependency update setup
+- **[VS Code Extensions](tooling/vscode/extensions.md)**: Recommended extensions for enhancing the development experience
 
 ### 🔮 Coming Soon
 

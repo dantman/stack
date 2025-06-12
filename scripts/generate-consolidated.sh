@@ -71,8 +71,8 @@ EOF
 create_consolidated "tooling" "Development Tooling Configuration" "Prettier, Dependabot, Package Scripts" \
     "tooling/prettier/setup.md" "tooling/dependabot.md" "tooling/package-scripts.md"
 
-create_consolidated "vscode" "VS Code Configuration" "Settings, Tasks, MCP Servers" \
-    "tooling/vscode/settings.md" "tooling/vscode/tasks.md" "tooling/vscode/mcp-servers.md"
+create_consolidated "vscode" "VS Code Configuration" "Settings, Tasks, MCP Servers, Extensions" \
+    "tooling/vscode/settings.md" "tooling/vscode/tasks.md" "tooling/vscode/mcp-servers.md" "tooling/vscode/extensions.md"
 
 create_consolidated "workspace" "Workspace Setup" "Project initialization and setup prompts" \
     "tooling/WorkspaceSetup.prompt.md"
