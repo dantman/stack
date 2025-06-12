@@ -13,10 +13,14 @@ These consolidated files group related configurations for single-fetch efficienc
 ## 📁 Individual Files (For Reference)
 
 - **.github/copilot-instructions**: [`.github/copilot-instructions.md`](https://raw.githubusercontent.com/dantman/stack/main/.github/copilot-instructions.md)
+- **scripts/github-token-required**: [`scripts/github-token-required.md`](https://raw.githubusercontent.com/dantman/stack/main/scripts/github-token-required.md)
+- **scripts/github-token-setup**: [`scripts/github-token-setup.md`](https://raw.githubusercontent.com/dantman/stack/main/scripts/github-token-setup.md)
+- **scripts/trigger-index-update**: [`scripts/trigger-index-update.md`](https://raw.githubusercontent.com/dantman/stack/main/scripts/trigger-index-update.md)
 - **tooling/WorkspaceSetup.prompt**: [`tooling/WorkspaceSetup.prompt.md`](https://raw.githubusercontent.com/dantman/stack/main/tooling/WorkspaceSetup.prompt.md)
 - **tooling/dependabot**: [`tooling/dependabot.md`](https://raw.githubusercontent.com/dantman/stack/main/tooling/dependabot.md)
 - **tooling/package-scripts**: [`tooling/package-scripts.md`](https://raw.githubusercontent.com/dantman/stack/main/tooling/package-scripts.md)
 - **tooling/prettier/setup**: [`tooling/prettier/setup.md`](https://raw.githubusercontent.com/dantman/stack/main/tooling/prettier/setup.md)
+- **tooling/vscode/extensions**: [`tooling/vscode/extensions.md`](https://raw.githubusercontent.com/dantman/stack/main/tooling/vscode/extensions.md)
 - **tooling/vscode/mcp-servers**: [`tooling/vscode/mcp-servers.md`](https://raw.githubusercontent.com/dantman/stack/main/tooling/vscode/mcp-servers.md)
 - **tooling/vscode/settings**: [`tooling/vscode/settings.md`](https://raw.githubusercontent.com/dantman/stack/main/tooling/vscode/settings.md)
 - **tooling/vscode/tasks**: [`tooling/vscode/tasks.md`](https://raw.githubusercontent.com/dantman/stack/main/tooling/vscode/tasks.md)
@@ -36,5 +40,5 @@ These consolidated files group related configurations for single-fetch efficienc
 @github https://raw.githubusercontent.com/dantman/stack/main/INDEX.md
 ```
 
-*Generated: Sun Jun  8 15:53:54 PDT 2025*
+*Generated: Thu Jun 12 16:18:55 UTC 2025*
 *Repository: https://github.com/dantman/stack*
