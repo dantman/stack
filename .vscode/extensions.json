@@ -1,0 +1,14 @@
+{
+  // Recommended VS Code extensions for this workspace
+  "recommendations": [
+    "fknop.vscode-npm",
+    "esbenp.prettier-vscode",
+    "arturock.gitstash",
+    "mhutchie.git-graph",
+    "axetroy.vscode-npm-import-package-version",
+    "EditorConfig.EditorConfig",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "herrmannplatz.npm-dependency-links"
+  ]
+}
