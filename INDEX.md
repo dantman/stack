@@ -40,5 +40,5 @@ These consolidated files group related configurations for single-fetch efficienc
 @github https://raw.githubusercontent.com/dantman/stack/refs/heads/main/INDEX.md
 ```
 
-*Generated: Thu Jun 12 17:39:48 UTC 2025*
+*Generated: Fri Jun 13 09:48:22 PDT 2025*
 *Repository: https://github.com/dantman/stack*
