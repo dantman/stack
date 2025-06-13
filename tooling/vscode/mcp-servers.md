@@ -30,14 +30,14 @@ Create `.vscode/mcp.json` in your project root:
 - No Docker or PAT required for most users
 - Simplifies setup and works out-of-the-box with Copilot-enabled accounts
 
-## Git MCP Server
+## Git MCP Server (Local)
 
 For local Git repository integration:
 
 ```json
 {
   "servers": {
-    "git-mcp-server": {
+    "git": {
       "command": "npx",
       "args": [
         "-y",
@@ -52,6 +52,49 @@ For local Git repository integration:
 
 - Node.js and npm installed
 - Git repository initialized
+
+## Git MCP Server in Devcontainers (Recommended)
+
+> **Note:** When using a devcontainer, npx-based MCP servers are often broken. Instead, run the Git MCP server as a background task and connect to it via HTTP.
+
+**Add this task to your `.vscode/tasks.json`:**
+
+```json
+// @note npx based MCP servers are broken in devcontainers so we run them as tasks
+{
+  "type": "process",
+  "label": "mcp-server: git",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@cyanheads/git-mcp-server"
+  ],
+  "options": {
+    "env": {
+      "MCP_TRANSPORT_TYPE": "http"
+    }
+  },
+  "problemMatcher": [],
+  "runOptions": {
+    "runOn": "folderOpen"
+  }
+}
+```
+
+**And use this in your `.vscode/mcp.json`:**
+
+```json
+{
+  "servers": {
+    "git": {
+      "url": "http://localhost:3010/mcp/"
+    }
+  }
+}
+```
+
+- This approach is only needed when a devcontainer setup is present.
+- The task will start the MCP server in HTTP mode, and the client connects to it via `localhost:3010`.
 
 ## Atlassian Jira MCP Server
 
