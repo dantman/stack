@@ -57,5 +57,5 @@ You are setting up a new project workspace. Your job is to configure the workspa
 
 ---
 
-*Consolidated from multiple source files on Sun Jun 22 00:39:54 UTC 2025*
+*Consolidated from multiple source files on Sun Jun 29 00:40:40 UTC 2025*
 *Source files: tooling/WorkspaceSetup.prompt.md*

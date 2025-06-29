@@ -418,5 +418,5 @@ These extensions are recommended for specific workflows or environments:
 
 ---
 
-*Consolidated from multiple source files on Sun Jun 22 00:39:54 UTC 2025*
+*Consolidated from multiple source files on Sun Jun 29 00:40:40 UTC 2025*
 *Source files: tooling/vscode/settings.md tooling/vscode/tasks.md tooling/vscode/mcp-servers.md tooling/vscode/extensions.md*
