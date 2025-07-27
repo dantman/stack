@@ -399,6 +399,7 @@ This document lists recommended VS Code extensions for Daniel's TypeScript-based
 - [Insert Unicode](https://marketplace.visualstudio.com/items?itemName=brunnerh.insert-unicode) — Lets you search for and insert Unicode characters directly into your documents, useful for symbols and special characters.
 - [File Nesting Updater](https://marketplace.visualstudio.com/items?itemName=antfu.file-nesting) — Automatically updates Anthony Fu's file nesting config for improved file organization in the VS Code explorer.
 - [Package Json Upgrade](https://marketplace.visualstudio.com/items?itemName=codeandstuff.package-json-upgrade) — Shows available updates in package.json files, offers quick fixes to update dependencies, and displays changelogs for easy package maintenance.
+- [Copy Relative Path](https://marketplace.visualstudio.com/items?itemName=alexdima.copy-relative-path) — Adds a "Copy Relative Path" that should've been included in VSCode by default.
 
 ---
 
@@ -418,5 +419,5 @@ These extensions are recommended for specific workflows or environments:
 
 ---
 
-*Consolidated from multiple source files on Sun Jul 27 00:42:25 UTC 2025*
+*Consolidated from multiple source files on Sun Jul 27 14:04:49 UTC 2025*
 *Source files: tooling/vscode/settings.md tooling/vscode/tasks.md tooling/vscode/mcp-servers.md tooling/vscode/extensions.md*
