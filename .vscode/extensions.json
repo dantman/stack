@@ -16,6 +16,7 @@
     "mechatroner.rainbow-csv",
     "brunnerh.insert-unicode",
     "antfu.file-nesting",
-    "codeandstuff.package-json-upgrade"
+    "codeandstuff.package-json-upgrade",
+    "alexdima.copy-relative-path"
   ]
 }
