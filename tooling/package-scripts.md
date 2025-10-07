@@ -37,6 +37,10 @@ Add these essential scripts to your `package.json`:
 }
 ```
 
+### Keep --turbopack when present
+
+If a `scripts` entry already contains `--turbopack`, do not remove it. That flag is often added by newer tooling (for example, recent Next.js templates or CLI tools) and removing it can unintentionally revert to older behavior, reduce performance during development, or break expectations of other tools in the ecosystem.
+
 ## Linting Scripts (Optional)
 
 For non-Next.js projects using ESLint:
