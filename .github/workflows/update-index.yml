@@ -8,10 +8,6 @@ on:
       - 'consolidated/**'
       - '.github/workflows/**'
   
-  schedule:
-    # Run weekly to catch any missed updates
-    - cron: '0 0 * * 0'
-  
   workflow_dispatch:
     # Allow manual triggering
 
