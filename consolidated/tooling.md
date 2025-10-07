@@ -281,12 +281,16 @@ Add these essential scripts to your `package.json`:
 		"dev": "next dev --turbopack",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
+		"lint": "eslint",
 		"typecheck": "tsc --noEmit",
 		"format": "prettier --write ."
 	}
 }
 ```
+
+### Keep --turbopack when present
+
+If a `scripts` entry already contains `--turbopack`, do not remove it. That flag is often added by newer tooling (for example, recent Next.js templates or CLI tools) and removing it can unintentionally revert to older behavior, reduce performance during development, or break expectations of other tools in the ecosystem.
 
 ## Linting Scripts (Optional)
 
@@ -364,7 +368,7 @@ Full `package.json` scripts section for a Next.js project with Drizzle and testi
 		"dev:sql": "cross-env LOG_SQL=true npm run dev",
 		"build": "drizzle-kit migrate --config drizzle.config.ts && next build",
 		"start": "next start",
-		"lint": "next lint",
+		"lint": "eslint",
 		"typecheck": "tsc --noEmit",
 		"format": "prettier --write .",
 		"test": "vitest",
@@ -374,6 +378,11 @@ Full `package.json` scripts section for a Next.js project with Drizzle and testi
 	}
 }
 ```
+
+### Migration note for `next lint` users
+
+If your project currently uses `next lint` you will need to migrate to a direct `eslint` invocation. This is more involved than a simple script swap so do not replace next lint with eslint when trying to just apply this stack's recommendations to an existing project.
+
 
 ## Usage
 
@@ -387,5 +396,5 @@ npm run format
 
 ---
 
-*Consolidated from multiple source files on Sun Oct  5 00:36:42 UTC 2025*
+*Consolidated from multiple source files on Tue Oct  7 21:03:35 UTC 2025*
 *Source files: tooling/prettier/setup.md tooling/dependabot.md tooling/package-scripts.md*
